@@ -1,11 +1,15 @@
 {% extends "bootstrap/base.html" %}
 
-{% block content %}
-{% block xx %}
-<nav class="navbar navbar-default">
-	<div class="container-fluid">
-		<img src={{url_for('static', filename='imgs/funnel-logo.svg')}}></img>
-	</div>
-</nav>
+{% block styles %}
+	<link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
 {% endblock %}
+
+{% block content %}
+	{% block xx %}
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<img class="logo" src={{url_for('static', filename='funnel-logo.svg')}}></img>
+		</div>
+	</nav>
+	{% endblock %} 
 {% endblock %}

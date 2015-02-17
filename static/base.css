@@ -1,0 +1,16 @@
+body {
+	margin: 0
+}
+
+.navbar-default {
+	background-color: #231F20;
+	height: 120px;
+}
+
+.logo{
+	height: 120px;
+	margin: 0 auto;
+	 display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
