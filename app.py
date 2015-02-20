@@ -6,6 +6,7 @@ from flask_bootstrap import Bootstrap
 def create_app():
     app = Flask(__name__)
     app.register_blueprint(main)
+    app.debug = True
     Bootstrap(app)
     return app
 
