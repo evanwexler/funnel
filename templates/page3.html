@@ -1,13 +1,15 @@
 {% extends "base.html" %}
 {% block content %}
 {{ super() }}
+<div>
 <div class="main">
-  <img class="gifs" src={{url_for('static', filename='gifs/dancing_bus.gif')}}></img>
-  <img class="gifs" src={{url_for('static', filename='gifs/dancing_bus.gif')}}></img>
-  <img class="gifs" src={{url_for('static', filename='gifs/dancing_bus.gif')}}></img>
-  <img class="gifs" src={{url_for('static', filename='gifs/dancing_bus.gif')}}></img>
-  <img class="gifs" src={{url_for('static', filename='gifs/dancing_bus.gif')}}></img>
+  <img class="gifs" src={{url_for('static', filename='gifs/dancing_bus.gif')}}>
+  <img class="gifs" src={{url_for('static', filename='gifs/dancing_bus.gif')}}>
+  <img class="gifs" src={{url_for('static', filename='gifs/dancing_bus.gif')}}>
+  <img class="gifs" src={{url_for('static', filename='gifs/dancing_bus.gif')}}>
+  <img class="gifs" src={{url_for('static', filename='gifs/dancing_bus.gif')}}>
   <div class="end">its the thing</div>
+  <a class="nextpage" href='/3'></a>
 </div>
-  <div class="e">lll</div>
+</div>
 {% endblock %}

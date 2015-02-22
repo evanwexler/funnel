@@ -1,17 +1,19 @@
-showMore = function() {
-  url = $('a.nextpage').attr('href')
-  x = $.get(url, function(data) {
-      links = $('img.gifs', data)
-      for (var i = 0; i<links.length; i++) {
-      $('div.main').append(links[i].outerHTML)
-      }
-      })
-}
-
 var waypoint = new Waypoint({
     context: $('div.main'),
-    element: $('div.main .end'),
+    element: $('div.main .end:last'),
+    offset: '100%',
     handler: function(d) {
     showMore()
     }
     })
+
+showMore = function() {
+  url = $('a.nextpage:last').attr('href')
+  x = $.get(url, function(data) {
+    content = $('div.main', data)[0]
+    console.log(content.innerHTML)
+    $("div.main").append(content.innerHTML)
+      })
+    waypoint.disable()
+    waypoint.enable()
+}
