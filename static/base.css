@@ -21,6 +21,11 @@ div.main {
 	overflow-y: scroll;
 }
 
+nav.navbar {
+	position: fixed;
+	width: 100%;
+}
+
 div.colourbar {
 	display: block;
 }
@@ -40,7 +45,7 @@ div.headline {
 	font-style: italic;
 	font-size: 4em;
 	text-align: center;
-	margin-top: 20%;
+	margin-top: 25%;
 }
 
 div.main.page2 .end {
