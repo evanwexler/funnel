@@ -14,6 +14,10 @@ def page2():
 def page3():
     return render_template('page3.html')
 
+@main.route('/4')
+def page4():
+    return render_template('page4.html')
+
 @main.route('/quiz')
 def quiz():
     return render_template('quiz.html')

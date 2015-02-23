@@ -1,21 +1,44 @@
 body {
-	margin: 0
+	margin: 0;
+	font-size: 12px;
 }
 
 .navbar-default {
 	background-color: #231F20;
-	height: 120px;
+	height: 100px;
 }
 
 .logo{
-	height: 120px;
+	height: 90px;
 	margin: 0 auto;
-	 display: block;
+	display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
 div.main {
-  max-height: 450px;
-  overflow-y: scroll;
+	max-height: 450px;
+	overflow-y: scroll;
+}
+
+div.colourbar {
+	display: block;
+}
+
+div.colourbar li {
+	height: 10px;
+	width: 11.11%;
+	margin: none;
+	padding: none;
+	float: left;
+	list-style-type: none;
+	display: inline-flex;
+}
+
+div.headline {
+	font-family: 'Droid Serif', serif;	
+	font-style: italic;
+	font-size: 4em;
+	text-align: center;
+	margin-top: 20%;
 }
