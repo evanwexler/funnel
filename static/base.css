@@ -17,7 +17,7 @@ body {
 }
 
 div.main {
-	max-height: 450px;
+	height: 100%;
 	overflow-y: scroll;
 }
 
@@ -41,4 +41,8 @@ div.headline {
 	font-size: 4em;
 	text-align: center;
 	margin-top: 20%;
+}
+
+div.main.page2 .end {
+	padding-top:50%;
 }
