@@ -67,36 +67,26 @@ div.main .end {
 	padding-top:20%;
 }
 
-img.center, center{
-	padding-top: 10%;
-	margin: 0 auto;
-	display: block;	
-}
 
 div.downarrow{
 	height: 20%;
 }
 
+img.center, div.center{
+	padding-top: 10%;
+	margin: 0 auto;
+	display: block;	
+}
 
 div.megaphone {
 	background-image: url('gifs/funnel-prephone.gif');
 	background-repeat: no-repeat;
 	height: 500px;
-	margin-left: 10%;
-	margin-top: 10%;
-/* 	needs to be interactive */
-	-webkit-transform:rotate(90deg);
-    -moz-transform:rotate(90deg);
-    -o-transform:rotate(90deg);
+	width: 500px;
+	margin: 0 auto;
 }
 
-div.megaphone:hover {
-	background-image: url('gifs/funnel-phone.gif');
-	background-repeat: no-repeat;
-}
-
-
-.rotate{
+div.rotate{
     -webkit-transition-duration: 0.8s;
     -moz-transition-duration: 0.8s;
     -o-transition-duration: 0.8s;
@@ -105,19 +95,22 @@ div.megaphone:hover {
     -moz-transition-property: -moz-transform;
     -o-transition-property: -o-transform;
     transition-property: transform;
-     
-    overflow:hidden;
- 
+    margin-top: 200px;
     }  
  
-.rotated
+div.rotate:hover
 {
-    -webkit-transform:rotate(90deg);
-    -moz-transform:rotate(90deg);
-    -o-transform:rotate(90deg);
-    margin-left: 15%;
-    transform-origin: 20% 40%;
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -ms-transform-origin: 50%; /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    -webkit-transform-origin: 50%; /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+    transform-origin: 50%;
+
+    background-image: url('gifs/funnel-phone.gif');
+	background-repeat: no-repeat;
 }  
+
 
 
 
