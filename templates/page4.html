@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
 {{ super() }}
-<div class="container">
+<div class="con">
 	<div class="main">
-		<div class="headline">Page 4</div>
-	  <img class="logo" src={{url_for('static', filename='gifs/robot.gif')}}>
-		<a class="nextpage" href='/5'></a>
-		<div class="end "></div>
+	  <div class="col-xs-12">
+	  </div>
+	  <div class="col-xs-12 downarrow" style="height:10%"></div>
+	  <a class="nextpage" href='/5'></a>
 	</div>
 </div>
 {% endblock %}

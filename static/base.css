@@ -60,14 +60,15 @@ div.headline {
 	font-size: 4em;
 	text-align: center;
 	margin-top: 25%;
+	z-index: 3;
 }
 
 div.main .end {
 	padding-top:20%;
 }
 
-img.center {
-	padding-top: 15%;
+img.center, center{
+	padding-top: 10%;
 	margin: 0 auto;
 	display: block;	
 }
@@ -77,12 +78,55 @@ div.downarrow{
 }
 
 
+div.megaphone {
+	background-image: url('gifs/funnel-prephone.gif');
+	background-repeat: no-repeat;
+	height: 500px;
+	margin-left: 10%;
+	margin-top: 10%;
+/* 	needs to be interactive */
+	-webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+}
+
+div.megaphone:hover {
+	background-image: url('gifs/funnel-phone.gif');
+	background-repeat: no-repeat;
+}
+
+
+.rotate{
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+     
+    overflow:hidden;
+ 
+    }  
+ 
+.rotated
+{
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    margin-left: 15%;
+    transform-origin: 20% 40%;
+}  
+
+
+
 /* ----------- Media Queries----------- */
 
 /* catch all phones*/
 @media only screen and (max-width: 420px) {
 
-	img.center {
+	img.center , div.megaphone img {
 		margin: 0 auto;
 		margin-top: 25%;
 		display: block;
