@@ -1,11 +1,13 @@
 html {
   height: 100%;
+  width: 100%;
 }
 
 body {
 	margin: 0;
 	font-size: 12px;
         height: 100%;
+        width: 100%;
 }
 
 .logo{
@@ -16,8 +18,9 @@ body {
     margin-right: auto;
 }
 
-div.container {
+div.con{
   height: 100%;
+  width: 100%;
 }
 
 div.main {
