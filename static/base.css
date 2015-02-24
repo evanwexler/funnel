@@ -1,6 +1,11 @@
+html {
+  height: 100%;
+}
+
 body {
 	margin: 0;
 	font-size: 12px;
+        height: 100%;
 }
 
 .navbar-default {
@@ -16,13 +21,17 @@ body {
     margin-right: auto;
 }
 
+div.container {
+  height: 100%;
+}
+
 div.main {
 	height: 100%;
 	overflow-y: scroll;
 }
 
 nav.navbar {
-	position: fixed;
+	/* position: fixed; */
 	width: 100%;
 }
 
@@ -48,6 +57,28 @@ div.headline {
 	margin-top: 25%;
 }
 
-div.main.page2 .end {
-	padding-top:50%;
+div.main .end {
+	padding-top:20%;
 }
+
+div.center img{
+	padding-top: 15%;
+	margin: 0 auto;
+	display: block;
+}
+
+
+/* ----------- Media Queries----------- */
+
+/* catch all phones*/
+@media only screen and (max-width: 767px) {
+/*
+	div.center img{
+		margin: 0 auto;
+		display: block;
+		height: 80%;
+		width: 80%;
+	}
+*/
+}
+			

@@ -1,11 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
 {{ super() }}
-<div>
+<div class="container">
 	<div class="main">
-		<div class="headline">Spinning Funnel</div>
-		<div class="end trigger4"></div>
+		<div class="headline">Page 4</div>
+	  <img class="logo" src={{url_for('static', filename='gifs/robot.gif')}}>
 		<a class="nextpage" href='/5'></a>
+		<div class="end "></div>
 	</div>
 </div>
 {% endblock %}
