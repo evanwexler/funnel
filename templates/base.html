@@ -1,28 +1,26 @@
 {% extends "bootstrap/base.html" %}
 {% block styles %}
-       {{ super() }}
+   {{ super() }}
 	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
 {% endblock %}
 
 {% block content %}
 	{% block customnav %}
-	<nav class="navbar navbar-default">
-		<div class="container-fluid">
-			 <img class="logo" src={{url_for('static', filename='funnel-logo.svg')}}>
-				<div class="colourbar">
-					<li style="background-color:#1F6D99"></li>
-					<li style="background-color:#1C9B6E"></li>
-					<li style="background-color:#95C020"></li>
-					<li style="background-color:#F0C514"></li>
-					<li style="background-color:#FD5203"></li>
-					<li style="background-color:#CE3028"></li>
-					<li style="background-color:#DC425C"></li>
-					<li style="background-color:#974C99"></li>
-					<li style="background-color:#4633A8"></li>
-				</div>
-		</div>
-	</nav>
+		<nav class="nav container-fluid">
+			<img class="logo" src={{url_for('static', filename='funnel-logo.svg')}}>
+			<div class="colourbar">
+				<li style="background-color:#1F6D99"></li>
+				<li style="background-color:#1C9B6E"></li>
+				<li style="background-color:#95C020"></li>
+				<li style="background-color:#F0C514"></li>
+				<li style="background-color:#FD5203"></li>
+				<li style="background-color:#CE3028"></li>
+				<li style="background-color:#DC425C"></li>
+				<li style="background-color:#974C99"></li>
+				<li style="background-color:#4633A8"></li>
+			</div>
+		</nav>
 	{% endblock%}
 {% endblock %}
 

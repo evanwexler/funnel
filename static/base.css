@@ -8,11 +8,6 @@ body {
         height: 100%;
 }
 
-.navbar-default {
-	background-color: #231F20;
-	height: 100px;
-}
-
 .logo{
 	height: 90px;
 	margin: 0 auto;
@@ -27,12 +22,18 @@ div.container {
 
 div.main {
 	height: 100%;
+	width: 100%;
 	overflow-y: scroll;
 }
 
-nav.navbar {
-	/* position: fixed; */
+nav.nav {
+	position: fixed;
 	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #231F20;
+	height: 100px;
+	border-radius:0px;
 }
 
 div.colourbar {
@@ -42,8 +43,8 @@ div.colourbar {
 div.colourbar li {
 	height: 10px;
 	width: 11.11%;
-	margin: none;
-	padding: none;
+	margin: 0;
+	padding: 0;
 	float: left;
 	list-style-type: none;
 	display: inline-flex;
@@ -61,10 +62,10 @@ div.main .end {
 	padding-top:20%;
 }
 
-div.center img{
+img.center {
 	padding-top: 15%;
 	margin: 0 auto;
-	display: block;
+	display: block;	
 }
 
 
