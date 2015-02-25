@@ -6,6 +6,10 @@ main = Blueprint('main', __name__, template_folder='templates')
 def home():
     return render_template('page2.html')
 
+@main.route('/way')
+def way():
+    return render_template('way.html')
+
 @main.route('/2')
 def page2():
     return render_template('page2.html')
