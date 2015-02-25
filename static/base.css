@@ -91,6 +91,7 @@ div.gray-headline {
 	margin-top: 25%;
 	z-index: 3;
 	color: #b3b3b3;
+	margin-bottom: 10%;
 }
 
 
@@ -157,8 +158,7 @@ div.rotate{
     transition-property: transform;
     }  
  
-div.rotated
-{
+div.rotated{
 	-webkit-transition-duration: 0.8s;
     -moz-transition-duration: 0.8s;
     -o-transition-duration: 0.8s;
@@ -177,10 +177,19 @@ div.rotated
 	background-repeat: no-repeat;
 }  
 
-
-
 .align-bottom {
 	vertical-align: baseline;
+}
+
+
+.iframeplace {
+	height: 100%;
+	background-color: #101010;
+	
+}
+
+.trigger {
+	color: #fff;
 }
 
 /* ----------- Media Queries----------- */

@@ -37,6 +37,10 @@ def page8():
 @main.route('/9')
 def page9():
     return render_template('page9.html')
+
+@main.route('/10')
+def page10():
+    return render_template('page10.html')
     
 @main.route('/quiz')
 def quiz():
