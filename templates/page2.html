@@ -3,11 +3,76 @@
 {{ super() }}
 <div class="con">
 	<div class="main">
-	  <div class="col-xs-12">
+		<div class="col-xs-12">
 	 	 <div class="center megaphone rotate"></div>
-	  </div>
-	  <div class="col-xs-12 downarrow" style="height:20%"></div>
+	 	 <div class="w">trigger</div>
+	 	 <div class="col-xs-12 downarrow" style="height:20%"></div>
 	  <a class="nextpage" href='/3'></a>
+ 	</div>
+		
+<script src={{url_for('static', filename='waypoints.js')}}></script>
+<script>
+var waypoint = new Waypoint({
+    context: $("div.main"),
+    element: $('div.w'),
+    handler: function(direction) {
+     if (direction == 'down') {
+	$(".megaphone").removeClass("rotate").addClass("rotated")
+}
+
+    else {
+	    $(".megaphone").removeClass("rotated").addClass("rotate")
+    }
+
+}, 
+        offset: 'bottom-in-view',
+        enabled: true
+})
+
+var waypoint2 = new Waypoint({
+    context: $("div.main"),
+    element: $('div.ww'),
+    handler: function(direction) {
+     if (direction == 'down') {
+	console.log('2')
+}}, 
+        offset: 'bottom-in-view',
+        enabled: true
+})
+
+var waypoint3 = new Waypoint({
+    context: $("div.main"),
+    element: $('div.www'),
+    handler: function(direction) {
+     if (direction == 'down') {
+	console.log('3')
+}}, 
+        offset: 'bottom-in-view',
+        enabled: true
+})
+</script>
+		<a class="nextpage" href='/2'></a>
+		<div class="end"></div>
 	</div>
 </div>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<script src={{url_for('static', filename='waypoints.js')}}></script>
+<script>
+  create_waypoints = function() {
+var waypoint = new Waypoint({
+    context: $("div.main"),
+    element: $('div.w'),
+    handler: function(direction) {
+     if (direction == 'down') {
+	console.log('1')
+}}, 
+        offset: 'bottom-in-view',
+        enabled: true
+})
+
+  }
+</script>
 {% endblock %}
