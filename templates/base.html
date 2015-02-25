@@ -1,6 +1,7 @@
 {% extends "bootstrap/base.html" %}
 {% block styles %}
    {{ super() }}
+   	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> <!-- Adaptive Setup -->
 	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
 {% endblock %}
