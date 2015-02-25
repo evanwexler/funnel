@@ -4,7 +4,7 @@
 		<div class="main">
 			<div class="page1"> 
 			<img class="mainlogo" src={{url_for('static', filename='funnel-logo.svg')}}>
-			<div class="col-xs-12 downarrow" style="height:500px"></div>
+			<div class="col-xs-12 firstarrow" style="height:1000px"></div>
 		  <a class="nextpage" href='/2'></a>
 		</div>
 	</div>	
@@ -15,8 +15,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
 <script>
 $('div.main').bind('scroll', function() {
-    $("img.mainlogo").height(500-$(this).scrollTop())
-    $("div.page1").height(500-$(this).scrollTop())
+    $("img.mainlogo").height(300-$(this).scrollTop())
+    $("div.page1").height(300-$(this).scrollTop())
     $("div.page1").css({'margin-top':$(this).scrollTop()})
     });
 </script>
