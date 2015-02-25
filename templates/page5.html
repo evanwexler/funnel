@@ -3,9 +3,65 @@
 {{ super() }}
 <div class="container">
 	<div class="main">
-		<div class="gray-headline">NATIVE</div>
+		<div class="gray-headline ">Native advertising</div>
+		<div class="ww">trigger to affix text</div>
+		<span class="col-sm-12 col-md-6">
+		<img class="right" src={{url_for('static', filename='gifs/phone-a.png')}}>
+			<img src={{url_for('static', filename='gifs/doughnut.gif')}}>
+			
+		</span>
+		<span class="col-sm-12 col-md-6">
+		<img class="left" src={{url_for('static', filename='gifs/phone-b.png')}}>
+			<img src={{url_for('static', filename='gifs/owl.gif')}}>
+			
+		</span>
 		<a class="nextpage" href='/6'></a>
 		<div class="end"></div>
 	</div>
 </div>
+
+
+<!-- waypoint trigger for adding/removing rotate classes -->
+
+<script src={{url_for('static', filename='waypoints.js')}}></script>
+<script>
+var waypoint = new Waypoint({
+    context: $("div.main"),
+    element: $('div.ww'),
+    handler: function(direction) {
+     if (direction == 'down') {
+	$(".megaphone").removeClass("fixed").addClass("free")
+}
+    else {
+	    $(".megaphone").removeClass("free").addClass("fixed")
+    }
+
+}, 
+        offset: 'bottom-in-view',
+        enabled: true
+})
+</script>
+	</div>
+</div>
+		
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<script src={{url_for('static', filename='waypoints.js')}}></script>
+<script>
+  create_waypoints = function() {
+var waypoint = new Waypoint({
+    context: $("div.main"),
+    element: $('div.ww'),
+    handler: function(direction) {
+     if (direction == 'down') {
+	console.log('1')
+}}, 
+        offset: 'bottom-in-view',
+        enabled: true
+})
+
+  }
+</script>
 {% endblock %}
