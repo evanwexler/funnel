@@ -177,6 +177,12 @@ div.rotated
 	background-repeat: no-repeat;
 }  
 
+
+
+.align-bottom {
+	vertical-align: baseline;
+}
+
 /* ----------- Media Queries----------- */
 
 
