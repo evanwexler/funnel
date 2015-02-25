@@ -97,6 +97,18 @@ img.center, div.center{
 	display: block;	
 }
 
+
+div.left img , img.right{
+	display: inline;
+	float: left;
+}
+
+
+div.right img , img.right{
+	display: inline;
+	float: right;
+}
+
 div.megaphone {
 	background-image: url('gifs/funnelprephone.gif');
 	background-repeat: no-repeat;
@@ -104,7 +116,7 @@ div.megaphone {
 	width:  500px;
 	margin: 0 auto;
 	background-size: 90%;
-	margin-left: 550px;
+	margin-left: 35%;
 	
 }
 
@@ -117,11 +129,18 @@ div.rotate{
     -moz-transition-property: -moz-transform;
     -o-transition-property: -o-transform;
     transition-property: transform;
-    margin-top: 200px;
     }  
  
 div.rotated
 {
+	-webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
     -ms-transform: rotate(90deg); /* IE 9 */
     -ms-transform-origin: 50%; /* IE 9 */
     -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
@@ -130,20 +149,7 @@ div.rotated
     transform-origin: 50%;
     background-image: url('gifs/funnelphone.gif');
 	background-repeat: no-repeat;
-	margin-top: 200px;
 }  
-
-
-div.gifcon img {
-	display: inline;
-	float: left;
-}
-
-
-div.fixsize img{
-	width: none;
-}
-
 
 /* ----------- Media Queries----------- */
 
