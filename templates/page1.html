@@ -1,8 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="con page1">
-<img class="mainlogo" src={{url_for('static', filename='funnel-logo.svg')}}>
-	 <div class="col-xs-12 downarrow" style="height:40%"></div>
-	  <a class="nextpage" href='/2'></a>
+<div class="con">
+	
+		<div class="main">
+			<div class="page1"> 
+			<img class="mainlogo" src={{url_for('static', filename='funnel-logo.svg')}}>
+			<div class="col-xs-12 downarrow" style="height:500px"></div>
+		  <a class="nextpage" href='/2'></a>
+		</div>
+	</div>	
 </div>
 {% endblock %}
