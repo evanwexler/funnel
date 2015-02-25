@@ -4,11 +4,7 @@ main = Blueprint('main', __name__, template_folder='templates')
 
 @main.route('/')
 def home():
-    return render_template('page2.html')
-
-@main.route('/way')
-def way():
-    return render_template('way.html')
+    return render_template('page1.html')
 
 @main.route('/2')
 def page2():

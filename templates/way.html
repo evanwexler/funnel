@@ -3,9 +3,8 @@
 {{ super() }}
 <div class="con">
 	<div class="main">
-		<div class="headline">Page 3</div>
-	  <img class="logo" src={{url_for('static', filename='gifs/robot.gif')}}>
-          <div class="w">trigger</div>
+		<div class="center megaphone rotate"></div>
+		<div class="w">trigger</div>
 	  <img class="logo" src={{url_for('static', filename='gifs/robot.gif')}}>
 	  <img class="logo" src={{url_for('static', filename='gifs/robot.gif')}}>
 	  <img class="logo" src={{url_for('static', filename='gifs/robot.gif')}}>
@@ -28,8 +27,14 @@ var waypoint = new Waypoint({
     element: $('div.w'),
     handler: function(direction) {
      if (direction == 'down') {
-	console.log('1')
-}}, 
+	$(".megaphone").removeClass("rotate").addClass("rotated")
+}
+
+    else {
+	    $(".megaphone").removeClass("rotated").addClass("rotate")
+    }
+
+}, 
         offset: 'bottom-in-view',
         enabled: true
 })
@@ -56,7 +61,7 @@ var waypoint3 = new Waypoint({
         enabled: true
 })
 </script>
-		<a class="nextpage" href='/5'></a>
+		<a class="nextpage" href='/2'></a>
 		<div class="end"></div>
 	</div>
 </div>
