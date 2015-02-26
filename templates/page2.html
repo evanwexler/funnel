@@ -35,23 +35,3 @@ var waypoint = new Waypoint({
 </div>
 		
 {% endblock %}
-
-{% block scripts %}
-{{ super() }}
-<script src={{url_for('static', filename='waypoints.js')}}></script>
-<script>
-  create_waypoints = function() {
-var waypoint = new Waypoint({
-    context: $("div.main"),
-    element: $('div.w'),
-    handler: function(direction) {
-     if (direction == 'down') {
-	console.log('1')
-}}, 
-        offset: 'bottom-in-view',
-        enabled: true
-})
-
-  }
-</script>
-{% endblock %}
