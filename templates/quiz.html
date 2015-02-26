@@ -1,5 +1,10 @@
 {% extends "bootstrap/base.html" %}
 
+{% block styles %}
+{{ super() }}
+<link rel="stylesheet" href="{{ url_for('static', filename='quiz.css') }}">
+{% endblock %}
+
 {% block content %}
 <div class="question">The Stark children (and Jon Snow) adopt six orphaned direwolf cubs in season one - Grey Wind, Lady, Ghost, Shaggydog, Summer and...?</div>
 <form class="op">

@@ -8,7 +8,7 @@ body {
 	font-size: 12px;
     height: 100%;
     width: 100%;
-    background-color: #fff;
+    background-color: #FFF;
 }
 
 
@@ -183,10 +183,17 @@ div.rotated{
 }
 
 
-.iframeplace {
-	height: 100%;
-	border: 1px solid #201d1d;
-	
+iframe.iframeplace {
+	margin: 0 auto;
+	margin-left: 18%;
+}
+
+
+iframe {
+	margin: 0 auto;
+	height: 600px;
+	width: 800px;
+	border: none;
 }
 
 .trigger {
@@ -201,11 +208,6 @@ div.rotated{
 
 
 }
-
-
-
-
-
 
 
 /* catch all phones*/
