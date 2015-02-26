@@ -185,14 +185,15 @@ div.rotated{
 
 iframe.iframeplace {
 	margin: 0 auto;
-	margin-left: 18%;
+	margin-left: 20%;
+	margin-bottom: 10%;
 }
 
 
 iframe {
 	margin: 0 auto;
 	height: 600px;
-	width: 800px;
+	width: 900px;
 	border: none;
 }
 
