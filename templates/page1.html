@@ -17,11 +17,18 @@
 <div class="con">
 		<div class="main">
 			<div class="page1"> 
+                          <div class="downarrow" style="height:200px"></div>
 			<img class="mainlogo" src={{url_for('static', filename='funnel-logo.svg')}}>
-	  <a class="nextpage" href='/2'></a>
-			<!-- <div class="firstarrow" style="height:20%"></div> -->
-			<!-- <div class="end"></div> -->
+	  <!-- <a class="nextpage" href='/2'></a> -->
+
 		</div>
+<div class="col-xs-12">
+	 	 <div class="center megaphone rotate"></div>
+	 	 <div class="w trigger">trigger to rotate</div>
+	 	 
+	  <a class="nextpage" href='/3'></a>
+		<div class="end"></div>
+</div>
 	</div>	
 </div>
 {% endblock %}
@@ -32,6 +39,7 @@
 var page1height = $("div.page1").innerHeight();
 $('div.main').bind('scroll', function() {
     $("img.mainlogo").height(300-$(this).scrollTop())
+    $("div.downarrow").height(200-$(this).scrollTop())
     $("div.page1").height(page1height-$(this).scrollTop())
     $("div.page1").css({'margin-top':$(this).scrollTop()})
     if ($('img.mainlogo').height() == 100) {
