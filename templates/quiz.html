@@ -9,50 +9,38 @@
 <h2>Test Your Bollywood Skillz</h2>
 
 <div class="question">The Godfather has inspired many Hindi films. Which one of these three is false?</div>
-<form class="op">
 	<fieldset>
 		<label for="Dharmatma">
-			<input type="radio" value="Dharmatma" name="Dharmatma" id="Dharmatma" value="1"> <span>Dharmatma</span>
+			<button class="btn btn-default answer" value="1">Dharmatma</button>
 		</label>
-		<label for="Aatank">
-			<input type="radio" value="Aatank Ki Aatank" name="Aatank" id="Aatank" value="2"> <span>Aatank Ki Aatank</span>
+		
+		<label for="Aatank Ki Aatank">
+			<button class="btn btn-default answer" value="2">Aatank Ki Aatank</button>
 		</label>
+		
 		<label for="Satya">
-			<input type="radio" value="Satya" name="Satya" id="Satya" value="3"> <span>Satya</span>
+			<button class="btn btn-default answer" value="3">Satya</button>
 		</label>
+	
 	</fieldset>
-</form>
-     <button class="btn btn-default" onclick=getResults(0)>submit</button>
-     <div class="blurb"> Answer: Satya. Movies inspired by Francis Ford Coppola's adaptation of the Mario Puzo novel include Sarkar and Nayakan in Tamil (remade in Hindi as Dayavan)</div>
+<p class="result"></p>
+<div class="blurb"> Answer: Satya. Movies inspired by Francis Ford Coppola's adaptation of the Mario Puzo novel include Sarkar and Nayakan in Tamil (remade in Hindi as Dayavan)</div>
+     <button class="btn btn-default next" onclick=getResults(0)>NEXT</button>
 	 	
-
-<div class="question">What was the name of the sinister castle where Arya and Gendry were held prisoner in season two?</div>
-<form class="op">
-     <input type="radio" name="answer" value="1" checked>Harrenhal<br>
-     <input type="radio" name="answer" value="2">Casterly Rock<br>
-     <input type="radio" name="answer" value="3">Moat Cailin<br>
-</form>
-     <button class="btn btn-default" onclick=getResults(1)>submit</button>
-
-<div class="question">What does Harrenhal prisoner Jaqen H'ghar promise Arya after she saves his life?</div>
-<form class="op">
-     <input type="radio" name="answer" value="1" checked>A chest of gold<br>
-     <input type="radio" name="answer" value="2">A new sword<br>
-     <input type="radio" name="answer" value="3">To kill three people of her choosing<br>
-</form>
-     <button class="btn btn-default" onclick=getResults(2)>submit</button>
-     <br><br>
-     <p class="result"></p>
-
-<script>
+<script>	
   answers = ["3", "1", "3"]
   getResults = function(q_no) {
-    answer = $('form.op input[type=radio]:checked')[q_no].value
+    answer = $('fieldset input[type=radio]:checked')[q_no].value
     if ( answer == answers[q_no] ) {
       $('p.result')[0].innerHTML = "Correct"
+      $('div.blurb').css({"display": "block"});
+      $('button.next').css({"display": "block"});
+      
     }
     else {
       $('p.result')[0].innerHTML = "Wrong"
+      $('div.blurb').css({"display": "block"});
+      $('button.next').css({"display": "block"});
     }
     }
 </script>

@@ -6,7 +6,6 @@ body {
 
 fieldset {
   font-size: 1em;
-  padding: 2em;
 }
 
 legend {
@@ -37,7 +36,11 @@ h2 {
 
 
 div.blurb {
-	display: block;
+	display: none;
+}
+
+button.next {
+	display: none;
 }
 
 
@@ -80,13 +83,12 @@ label {
 
 /* the checked style using the :checked pseudo class */
 [type="radio"]:checked + span:before {
-  background: green;
+  background: #f11888;
   box-shadow: 0 0 0 0.25em #000;
 }
 
 /* never forget focus styling */
 [type="radio"]:focus + span:after {
-  content: '\0020\2190';
   font-size: 1.5em;
   line-height: 1;
   vertical-align: -0.125em;
