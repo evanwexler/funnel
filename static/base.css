@@ -216,6 +216,12 @@ iframe {
 
 }
 
+
+.hatman{
+	margin-left: -55px;
+	margin-top: 10px;
+}
+
 /* ----------- Adaptive Media Query ----------- */
 
 
@@ -241,8 +247,19 @@ iframe {
 	img.center, div.center , div.left img , img.left, div.right img , img.right {
 		margin: 0 auto;
 		display: block;	
+		float: none;
 	}
 	
+	
+	img.canphone , .laptopcon img {
+		width: 100%;
+	}
+	
+	iframe {
+		height: inherit;
+		width: inherit;
+		overflow: hidden;
+	}
 
 }
 
