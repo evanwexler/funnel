@@ -6,48 +6,71 @@
 {% endblock %}
 
 {% block content %}
-<h2>Test Your Bollywood Skillz</h2>
 
-<div class="ques q0" q_no=0>
-<div class="question">The Godfather has inspired many Hindi films. Which one of these three is false?</div>
-	<fieldset>
-		<label for="Dharmatma">
-			<button onclick="evalans(0,1)" class="btn btn-default answer" value="1">Dharmatma</button>
-		</label>
-		
-		<label for="Aatank Ki Aatank">
-			<button onclick="evalans(0,2)" class="btn btn-default answer" value="2">Aatank Ki Aatank</button>
-		</label>
-		
-		<label for="Satya">
-			<button onclick="evalans(0,3)" class="btn btn-default answer" value="3">Satya</button>
-		</label>
+<div class="quizbody">
+	<h2>Test Your Bollywood Skillz</h2>
 	
-	</fieldset>
-<div class="blurb"> Satya. Movies inspired by Francis Ford Coppola's adaptation of the Mario Puzo novel include Sarkar and Nayakan in Tamil (remade in Hindi as Dayavan)</div>
-</div>
-
-<div class="ques q1" q_no=1 style='display:none'>
-<div class="question">The Godfather has inspired many Hindi films. Which one of these three is false? Q2</div>
-	<fieldset>
-		<label for="Dharmatma">
-			<button onclick="evalans(0,1)" class="btn btn-default answer" value="1">Dharmatma</button>
-		</label>
+	<div class="ques q0" q_no=0>
+	<div class="question">The Godfather has inspired many Hindi films. Which one of these three is false?</div>
+		<fieldset>
+			<label for="1">
+				<button onclick="evalans(0,1)" class="btn btn-default answer" value="1">Dharmatma</button>
+			</label>
+			
+			<label for="2">
+				<button onclick="evalans(0,2)" class="btn btn-default answer" value="2">Aatank Ki Aatank</button>
+			</label>
+			
+			<label for="3">
+				<button onclick="evalans(0,3)" class="btn btn-default answer" value="3">Satya</button>
+			</label>
 		
-		<label for="Aatank Ki Aatank">
-			<button onclick="evalans(0,2)" class="btn btn-default answer" value="2">Aatank Ki Aatank</button>
-		</label>
-		
-		<label for="Satya">
-			<button onclick="evalans(0,3)" class="btn btn-default answer" value="3">Satya</button>
-		</label>
+		</fieldset>
+	<div class="blurb"> Satya. Movies inspired by Francis Ford Coppola's adaptation of the Mario Puzo novel include Sarkar and Nayakan in Tamil (remade in Hindi as Dayavan)</div>
+	</div>
 	
-	</fieldset>
-<div class="blurb"> Q2 blurb</div>
+	<div class="ques q1" q_no=1 style='display:none'>
+	<div class="question">One of Gulzar's films has never been released. Which one?</div>
+		<fieldset>
+			<label for="1">
+				<button onclick="evalans(0,1)" class="btn btn-default answer" value="1">Maachis, about terrorism in Punjab.</button>
+			</label>
+			
+			<label for="2">
+				<button onclick="evalans(0,2)" class="btn btn-default answer" value="2">Mausam, about a man who goes looking for his former lover, a prostitute.</button>
+			</label>
+			
+			<label for="3">
+				<button onclick="evalans(0,3)" class="btn btn-default answer" value="3">Libaas, about a love triangle involving a theatre couple and a businessman.</button>
+			</label>
+		
+		</fieldset>
+	<div class="blurb">Answer: Libaas.</div>
+	</div>
 </div>
-
+	
+	<div class="ques q2" q_no=2 style='display:none'>
+	<div class="question">Which Indian movie won the Camera D'or, or best first film prize, at the Cannes Film Festival?</div>
+		<fieldset>
+			<label for="1">
+				<button onclick="evalans(0,1)" class="btn btn-default answer" value="1">The Lunchbox, directed by Ritesh Batra.</button>
+			</label>
+			
+			<label for="2">
+				<button onclick="evalans(0,2)" class="btn btn-default answer" value="2">Salaam Bombay!, directed by Mira Nair.</button>
+			</label>
+			
+			<label for="3">
+				<button onclick="evalans(0,3)" class="btn btn-default answer" value="3">Pather Panchali, directed by Satyajit Ray.</button>
+			</label>
+		
+		</fieldset>
+	<div class="blurb">Answer: Libaas.</div>
+	</div>
+</div>
+	
 <div class="result" style="height:100px"></div>
-<button onclick="nextPage()" class="btn btn-default">NEXT</button>
+<button onclick="nextPage()" class="btn btn-danger next">NEXT</button>
 	 	
 <script>	
   answers = ["3", "1", "3"]
@@ -55,9 +78,10 @@
     if (answers[q_no] == a_no) {
       qclass = 'div.q' + q_no + ' div.blurb'
       $('div.result')[0].innerHTML = 'Correct! ' + ($(qclass)[0].innerHTML)
+	  $('button.next').show();
     }
     else {
-      $('div.result')[0].innerHTML = 'Wrong, pick something else'
+      $('div.result')[0].innerHTML = 'Sorry. Please try again.'
     }
     }
 
@@ -66,6 +90,7 @@
     console.log(current_ques);
     next_ques = Number(current_ques) + 1;
     console.log('next_ques');
+    $('button.next').hide();
     $('div.q' + current_ques).css({'display':'none'})
     $('div.q' + next_ques).css({'display':'block'})
       $('div.result')[0].innerHTML = ''

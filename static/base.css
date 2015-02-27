@@ -92,7 +92,6 @@ div.gray-headline {
 	margin-top: 25%;
 	z-index: 3;
 	color: #b3b3b3;
-	margin-bottom: 5%;
 }
 
 
@@ -139,7 +138,7 @@ div.right cntr , img.cntr{
 
 
 div.megaphone {
-	background-image: url('gifs/funnelprephone.gif');
+	background-image: url('gifs/funnelprephone1.gif');
 	background-repeat: no-repeat;
 	height: 400px;
 	width:  400px;
@@ -174,7 +173,7 @@ div.rotated{
     -webkit-transform-origin: 50%; /* Chrome, Safari, Opera */
     transform: rotate(90deg);
     transform-origin: 50%;
-    background-image: url('gifs/funnelphone.gif');
+    background-image: url('gifs/funnelphone1.gif');
 	background-repeat: no-repeat;
 }  
 

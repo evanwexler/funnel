@@ -1,18 +1,14 @@
 /* Nothing to see here. */
 body {
+  font-family: 'Droid Serif', serif;
   margin: 3em auto;
-  max-width: 30em;
+  max-width: 60em;
+  background-color: #fdfdfd;
+  padding: 0px 30px 0px 30px
 }
 
 fieldset {
   font-size: 1em;
-}
-
-legend {
-  color: #fff;
-  background: #000;
-  padding: 0.25em 1em;
-  border-radius: 1em;
 }
 
 .p {
@@ -25,37 +21,38 @@ legend {
 div.question {
 	font-size: 2em;
 	font-family: 'Droid Serif', serif;	
+	max-width: 80%;
+	font-weight: bold;
 }
 
 
 h2 {
-	background: black;
-	color: #fff;
-	padding: 5%;
+	background: #231F20;;
+	color: #fdfdfd;
+	padding: 2%;
+	margin-bottom: 1em;
 }
 
+.btn-default,.btn-danger, .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default 
+{
+	font-size: 1em;
+	margin-bottom: 1em;
+}
 
 div.blurb {
 	display: none;
 }
 
-button.next {
-	display: none;
+div.result {
+	font-size: 2em;
+	margin-bottom: 5%;
 }
 
-
-/* HTML5 Boilerplate accessible hidden styles */
-[type="radio"] {
-  border: 0; 
-  clip: rect(0 0 0 0); 
-  height: 1px; margin: -1px; 
-  overflow: hidden; 
-  padding: 0; 
-  position: absolute; 
-  width: 1px;
+div.question {
+	margin-bottom: 1em;
 }
 
-/* One radio button per line */
+/* One label per line */
 label {
   display: block;
   cursor: pointer;
@@ -63,33 +60,6 @@ label {
   font-size: 1.5em;
 }
 
-[type="radio"] + span {
-  display: block;
-}
-
-/* the basic, unchecked style */
-[type="radio"] + span:before {
-  content: '';
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  vertical-align: -0.25em;
-  border-radius: 1em;
-  border: 0.125em solid #fff;
-  box-shadow: 0 0 0 0.15em #000;
-  margin-right: 0.75em;
-  transition: 0.5s ease all;
-}
-
-/* the checked style using the :checked pseudo class */
-[type="radio"]:checked + span:before {
-  background: #f11888;
-  box-shadow: 0 0 0 0.25em #000;
-}
-
-/* never forget focus styling */
-[type="radio"]:focus + span:after {
-  font-size: 1.5em;
-  line-height: 1;
-  vertical-align: -0.125em;
+button.next {
+	display: none;
 }
