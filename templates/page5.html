@@ -5,15 +5,17 @@
 	<div class="main">
 		<div class="gray-headline ">Native advertising</div>
 		<div class="ww trigger">trigger to affix text</div>
-		<span class="col-sm-12 col-md-6">
-			<img class="right" src={{url_for('static', filename='gifs/phone-1.png')}}>
-			<img class="align-bottom" style="height: 140px; margin-top: 430px; margin-left: 35%;" src={{url_for('static', filename='gifs/doughnut1.gif')}}>
-		</span>
-		
-		<span class="col-sm-12 col-md-6">
-			<img class="left" style="vertical-align: top;" src={{url_for('static', filename='gifs/phone-2.png')}}>
-			<img class="align-bottom" style="height: 140px; margin-top: 430px;" src={{url_for('static', filename='gifs/owl1.gif')}}>
-		</span>
+			<div class="row">
+				<span class="col-sm-12 col-md-6">
+					<img class="right" src={{url_for('static', filename='gifs/phone-1.png')}}>
+					<img class="align-bottom" style="height: 140px; margin-top: 430px; float:right;" src={{url_for('static', filename='gifs/doughnut1.gif')}}>
+				</span>
+				
+				<span class="col-sm-12 col-md-6">
+					<img class="left" style="vertical-align: top;" src={{url_for('static', filename='gifs/phone-2.png')}}>
+					<img class="align-bottom" style="height: 140px; margin-top: 430px;" src={{url_for('static', filename='gifs/owl1.gif')}}>
+				</span>
+			</div>
 		<div class="col-xs-12 downarrow" style="height:200px"></div>
 		<a class="nextpage" href='/6'></a>
 		<div class="end"></div>

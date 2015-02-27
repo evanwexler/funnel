@@ -140,8 +140,8 @@ div.right cntr , img.cntr{
 div.megaphone {
 	background-image: url('gifs/funnelprephone1.gif');
 	background-repeat: no-repeat;
-	height: 400px;
-	width:  400px;
+	height: 500px;
+	width:  500px;
 	margin: 0 auto;
 	background-size: 100%;
 	margin-top: 15%;
@@ -188,6 +188,10 @@ iframe.iframeplace {
 	height: 100;
 }
 
+iframe.quizplace {
+	min-height: 500px;
+}
+
 
 iframe {
 	margin: 0 auto;
@@ -198,6 +202,17 @@ iframe {
 
 .trigger {
 	color: #fff;
+}
+
+
+.laptopcon img{
+ 	max-width: 820px;	
+}
+
+.row {
+	margin-right: 0px;
+	margin-left:  0px; 
+
 }
 
 /* ----------- Media Queries----------- */
