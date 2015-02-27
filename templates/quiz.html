@@ -33,15 +33,15 @@
 	<div class="question">One of Gulzar's films has never been released. Which one?</div>
 		<fieldset>
 			<label for="1">
-				<button onclick="evalans(0,1)" class="btn btn-default answer" value="1">Maachis, about terrorism in Punjab.</button>
+				<button onclick="evalans(1,1)" class="btn btn-default answer" value="1">Maachis, about terrorism in Punjab.</button>
 			</label>
 			
 			<label for="2">
-				<button onclick="evalans(0,2)" class="btn btn-default answer" value="2">Mausam, about a man who goes looking for his former lover, a prostitute.</button>
+				<button onclick="evalans(1,2)" class="btn btn-default answer" value="2">Mausam, about a man who goes looking for his former lover, a prostitute.</button>
 			</label>
 			
 			<label for="3">
-				<button onclick="evalans(0,3)" class="btn btn-default answer" value="3">Libaas, about a love triangle involving a theatre couple and a businessman.</button>
+				<button onclick="evalans(1,3)" class="btn btn-default answer" value="3">Libaas, about a love triangle involving a theatre couple and a businessman.</button>
 			</label>
 		
 		</fieldset>
@@ -53,15 +53,15 @@
 	<div class="question">Which Indian movie won the Camera D'or, or best first film prize, at the Cannes Film Festival?</div>
 		<fieldset>
 			<label for="1">
-				<button onclick="evalans(0,1)" class="btn btn-default answer" value="1">The Lunchbox, directed by Ritesh Batra.</button>
+				<button onclick="evalans(2,1)" class="btn btn-default answer" value="1">The Lunchbox, directed by Ritesh Batra.</button>
 			</label>
 			
 			<label for="2">
-				<button onclick="evalans(0,2)" class="btn btn-default answer" value="2">Salaam Bombay!, directed by Mira Nair.</button>
+				<button onclick="evalans(2,2)" class="btn btn-default answer" value="2">Salaam Bombay!, directed by Mira Nair.</button>
 			</label>
 			
 			<label for="3">
-				<button onclick="evalans(0,3)" class="btn btn-default answer" value="3">Pather Panchali, directed by Satyajit Ray.</button>
+				<button onclick="evalans(2,3)" class="btn btn-default answer" value="3">Pather Panchali, directed by Satyajit Ray.</button>
 			</label>
 		
 		</fieldset>
@@ -73,7 +73,7 @@
 <button onclick="nextPage()" class="btn btn-danger next">NEXT</button>
 	 	
 <script>	
-  answers = ["3", "1", "3"]
+  answers = ["3", "3", "1"]
   evalans = function(q_no, a_no) {
     if (answers[q_no] == a_no) {
       qclass = 'div.q' + q_no + ' div.blurb'
