@@ -215,25 +215,33 @@ iframe {
 
 }
 
-/* ----------- Media Queries----------- */
+/* ----------- Adaptive Media Query ----------- */
 
 
-/* wide ipads*/
-@media only screen and (max-width: 1024px) {
-
-
-}
-
-
-/* catch all phones*/
-@media only screen and (max-width: 420px) {
+@media(max-width: 800px) { 
 	
+	.mainlogo{
+		margin: 0 auto;
+		display: block;
+	}
+		
 	div.megaphone {
-	height: 300px;
-	width:  300px;
-	margin-top: 70%;
+		height: 250px;
+		width:  250px;
+	}
+	
+	
+	div.headline , div.bold-headline, div.gray-headline {
+		font-size: 2em;
+	}
+	
+	
+	img {
+		width: 50%;
+	}
+
 }
 
 
-}
+
 			
