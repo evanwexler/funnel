@@ -9,6 +9,7 @@ body {
     height: 100%;
     width: 100%;
     background-color: #fdfdfd;
+    
 }
 
 
@@ -119,7 +120,7 @@ img.center, div.center{
 }
 
 
-div.left img , img.right{
+div.left img , img.left{
 	display: inline;
 	float: left;
 }
@@ -223,6 +224,7 @@ iframe {
 	.mainlogo{
 		margin: 0 auto;
 		display: block;
+		width: 50%;
 	}
 		
 	div.megaphone {
@@ -236,9 +238,11 @@ iframe {
 	}
 	
 	
-	img {
-		width: 50%;
+	img.center, div.center , div.left img , img.left, div.right img , img.right {
+		margin: 0 auto;
+		display: block;	
 	}
+	
 
 }
 
