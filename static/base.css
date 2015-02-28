@@ -207,7 +207,8 @@ iframe {
 
 
 .laptopcon img{
- 	max-width: 820px;	
+ 	max-width: 820px;
+ 	margin: 0 auto;	
 }
 
 .row {
@@ -251,14 +252,20 @@ iframe {
 	}
 	
 	
-	img.canphone , .laptopcon img {
-		width: 100%;
+	img.canphone , .laptopcon {
+		
+		
 	}
 	
 	iframe {
 		height: inherit;
 		width: inherit;
 		overflow: hidden;
+	}
+	
+	
+	bear, hatman {
+		display: none;
 	}
 
 }
