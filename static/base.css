@@ -92,7 +92,7 @@ div.gray-headline {
 	font-style: italic;
 	font-size: 4em;
 	text-align: center;
-	margin-top: 25%;
+	margin-top: 200px;
 	z-index: 3;
 	color: #b3b3b3;
 }
@@ -113,7 +113,7 @@ div.main .end {
 
 
 div.downarrow{
-	height: 20%;
+	height: 200px;
 }
 
 img.center, div.center{
