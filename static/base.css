@@ -231,7 +231,13 @@ iframe {
 	margin-top: 10px;
 }
 
-/* ----------- Adaptive Media Query ----------- */
+
+div.lettercenter{
+	width: 500px;
+	margin: 0 auto;
+}
+
+/* ----------- Adaptive Media Queries ----------- */
 
 
 @media(max-width: 800px) { 
@@ -261,9 +267,9 @@ iframe {
 	}
 	
 	
-	img.canphone , .laptopcon {
-		
-		
+	.laptopcon , .laptopcon img {
+		max-width: 250px;
+		margin: 0 auto;
 	}
 	
 	iframe {
@@ -273,12 +279,17 @@ iframe {
 	}
 	
 	
-	.bear, .hatman, .doughnut, .owl {
+	.bear, .hatman, .doughnut, .owl , .bookworm{
 		display: none;
 	}
-
+	
+	
+	div.main .end {
+		padding-top: 200px;
+	}
+	.col-xs-12
+	{
+		padding: 0;
+	}
+	
 }
-
-
-
-			
