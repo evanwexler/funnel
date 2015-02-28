@@ -147,6 +147,8 @@ div.megaphone {
 	width:  500px;
 	margin: 0 auto;
 	background-size: 100%;
+	margin-top: 300px;
+	z-index: 1;
 }
 
 div.rotate{
@@ -239,14 +241,6 @@ iframe {
 		display: block;
 		width: 50%;
 	}
-		
-	div.megaphone, div.rotate{
-		height: 250px;
-		width:  250px;
-		
-		margin-top: 30%;
-	}
-	
 	
 	div.headline , div.bold-headline, div.gray-headline {
 		font-size: 2em;
@@ -257,6 +251,13 @@ iframe {
 		margin: 0 auto;
 		display: block;	
 		float: none;
+	}
+	
+	div.megaphone, div.rotate{
+		height: 250px;
+		width:  250px;
+		margin-top: 300px;
+		z-index: 1;
 	}
 	
 	
