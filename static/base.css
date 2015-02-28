@@ -273,7 +273,7 @@ iframe {
 	}
 	
 	
-	bear, hatman {
+	.bear, .hatman, .doughnut, .owl {
 		display: none;
 	}
 
