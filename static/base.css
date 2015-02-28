@@ -234,9 +234,11 @@ iframe {
 		width: 50%;
 	}
 		
-	div.megaphone {
+	div.megaphone, div.rotate{
 		height: 250px;
 		width:  250px;
+		
+		margin-top: 30%;
 	}
 	
 	
