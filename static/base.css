@@ -274,7 +274,7 @@ div.lettercenter{
 	
 	iframe {
 		height: inherit;
-		width: inherit;
+		width: 100%;
 		overflow: hidden;
 	}
 	
@@ -290,6 +290,10 @@ div.lettercenter{
 	.col-xs-12
 	{
 		padding: 0;
+	}
+	
+	div.lettercenter {
+		width: 100%;
 	}
 	
 }
