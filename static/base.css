@@ -232,14 +232,21 @@ iframe {
 }
 
 div.lettercenter{
-	width: 500px;
+	width: 800px;
 	margin: 0 auto;
+	height: inherit;
 }
+
 
 .suspenders {
 	height: 140px; 
 	margin-top: 258px !important; 
 	position: absolute;
+}
+
+
+.bookworm{
+	padding-left: 140px;
 }
 
 /* ----------- Adaptive Media Queries ----------- */
@@ -296,10 +303,10 @@ div.lettercenter{
 	}
 	
 	div.lettercenter {
-		width: 100%;
+		width: 320px;
 	}
 	
-	.suspenders {
+	.suspenders , .businessman {
 		display: none;
 	}
 	
