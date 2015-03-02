@@ -231,10 +231,15 @@ iframe {
 	margin-top: 10px;
 }
 
-
 div.lettercenter{
 	width: 500px;
 	margin: 0 auto;
+}
+
+.suspenders {
+	height: 140px; 
+	margin-top: 258px !important; 
+	position: absolute;
 }
 
 /* ----------- Adaptive Media Queries ----------- */
@@ -268,14 +273,12 @@ div.lettercenter{
 	
 	
 	.laptopcon , .laptopcon img {
-		max-width: 250px;
+		max-width: 400px;
 		margin: 0 auto;
 	}
 	
 	iframe {
-		height: inherit;
-		width: 100%;
-		overflow: hidden;
+	 display: none;
 	}
 	
 	
@@ -294,6 +297,10 @@ div.lettercenter{
 	
 	div.lettercenter {
 		width: 100%;
+	}
+	
+	.suspenders {
+		display: none;
 	}
 	
 }
