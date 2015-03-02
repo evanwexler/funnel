@@ -249,6 +249,12 @@ div.lettercenter{
 	padding-left: 140px;
 }
 
+.grid {
+	max-width: 1600px;
+	min-width: 1000px;
+	overflow: hidden;
+	}
+
 /* ----------- Adaptive Media Queries ----------- */
 
 
@@ -309,5 +315,11 @@ div.lettercenter{
 	.suspenders , .businessman {
 		display: none;
 	}
+	
+	img.gifgrid {
+		display: none;
+	}
+	
+	
 	
 }
