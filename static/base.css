@@ -148,7 +148,7 @@ div.megaphone {
 	margin: 0 auto;
 	background-size: 100%;
 	margin-top: 300px;
-	z-index: 1;
+	z-index: 0;
 }
 
 div.rotate{
@@ -244,10 +244,13 @@ div.lettercenter{
 }
 
 
-img.bookworm{
+div.bookworm{
 	padding-left: 140px;
 	height: 140px;
+	background-image: url('gifs/funnelprephone1.gif');
+	background-repeat: no-repeat; 
 }
+
 
 .grid {
 	max-width: 1600px;
