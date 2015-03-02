@@ -232,7 +232,7 @@ iframe {
 }
 
 div.lettercenter{
-	width: 800px;
+	width: 700px;
 	margin: 0 auto;
 }
 
@@ -245,12 +245,31 @@ div.lettercenter{
 
 
 div.bookworm{
-	padding-left: 140px;
-	height: 140px;
+	margin-left: 40px;
+	width: 141px;
+	height: 200px;
 	background-image: url('gifs/bookworm1.gif');
 	background-repeat: no-repeat; 
+	float: left;
+	margin-top: 200px;
 }
 
+div.newsletter{
+	width: 315px;
+	height: 551px;
+	background-image: url('gifs/newsletter1.png');
+	background-repeat: no-repeat; 
+	float: left;
+
+}
+div.businessman{
+	width: 200px;
+	height: 200px;
+	background-image: url('gifs/businessman1.gif');
+	background-repeat: no-repeat;
+	float: left; 
+	margin-top: 200px;
+}
 
 .grid {
 	max-width: 1600px;
