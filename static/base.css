@@ -244,8 +244,9 @@ div.lettercenter{
 }
 
 
-.bookworm{
+img.bookworm{
 	padding-left: 140px;
+	height: 140px;
 }
 
 .grid {
