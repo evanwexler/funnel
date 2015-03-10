@@ -4,10 +4,23 @@
 <div class="con">
 	<div class="main">
 	  <div class="headline">Traditional Advertising?</div>
+                <div class="slick-stuff">
+                  <div>
 		<img class="center canphone img-responsive" src={{url_for('static', filename='gifs/canphone1.png')}}>
-		<div class="bold-headline">We can do better</div>
+                  <div><p>We can do better</p></div>
+                </div>
+<div>
+		<img class="center canphone img-responsive" src={{url_for('static', filename='gifs/canphone1.png')}}>
+                  <div><p>Page 2</p></div>
+                </div>
+              </div>
 		<a class="nextpage" href='/5'></a>
 		<div class="end"></div>
+
+<script>
+  $('.slick-stuff').slick({
+      });
+</script>
 	</div>
 </div>
 {% endblock %}
