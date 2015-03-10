@@ -44,6 +44,7 @@ scrollFunc = function() {
 }
 
 loadNextPage = function() {
+    console.log('page1')
     if($(this).scrollTop() + $(this).innerHeight() >= $(this)[0].scrollHeight) {
     url = $('a.nextpage:last').attr('href')
     x = $.get(url, function(data) {
