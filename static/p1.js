@@ -35,6 +35,8 @@ var cbwaypoint = new Waypoint({
 
 var page1height = $("div.page1").innerHeight();
 
+var pagesLoaded = []
+
 scrollFunc = function() {
     scrolltop = $(this).scrollTop()
     $("img.mainlogo").height(300-scrolltop)
@@ -44,13 +46,16 @@ scrollFunc = function() {
 }
 
 loadNextPage = function() {
-    console.log('page1')
     if($(this).scrollTop() + $(this).innerHeight() >= $(this)[0].scrollHeight) {
     url = $('a.nextpage:last').attr('href')
+    isPresent = pagesLoaded.indexOf(url)
+    if (isPresent == -1) {
+      pagesLoaded.push(url)
     x = $.get(url, function(data) {
       content = $('div.main', data)[0]
       $("div.main").append(content.innerHTML)
         })
+    }
     }
 }
 
