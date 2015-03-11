@@ -12,6 +12,16 @@ body {
     
 }
 
+h2 {
+	text-transform: uppercase;
+	font-family: 'Droid Serif', serif;	
+	font-style: italic;
+}
+
+h3 {
+	font-family: 'Droid Serif', serif;	
+	font-style: italic;
+}
 
 div.page1 {
 	background-color: #231F20;
@@ -76,6 +86,12 @@ div.colourbar li {
 	display: inline-flex;
 }
 
+div.right-align  {
+	text-align: right;
+}
+img.right-align  {
+	float: right;
+}
 
 
 div.headline {
@@ -280,6 +296,7 @@ div.businessman{
 /* ----------- Adaptive Media Queries ----------- */
 
 
+/*
 @media(max-width: 800px) { 
 	
 	.mainlogo{
@@ -345,3 +362,4 @@ div.businessman{
 	
 	
 }
+*/

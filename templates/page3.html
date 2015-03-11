@@ -3,22 +3,30 @@
 {{ super() }}
 <div class="con">
 	<div class="main">
-		<div class="headline">Together, we can tell amazing stories</div>
-			<div class="gifcon">
-				<span class="col-sm-5">
-					<img class="right" src={{url_for('static', filename='gifs/pencil1.gif')}}>
-				</span>
-				
-				<span class=" col-sm-2 bear">
-					<img class="cntr" style="margin-top: 30px;" src={{url_for('static', filename='gifs/bear.gif')}}>
-				</span>
-				
-				<span class="col-sm-4 hatman">
-					<img class="left "  src={{url_for('static', filename='gifs/hatman.gif')}}
-				</span>	
-			</div>
-			<a class="nextpage" href='/4'></a>
+		<div class="slick-stuff" style="margin-top: 500px;">
+	<div>
+		<div class="col-xs-12 col-sm-6 right-align">
+			<h2>engage ads</h2>
+			<h3 style="padding-left: 200px;">Stunning interactive display ads fully optimized for all devices</h3>
+		</div>
+		
+		<div class="col-xs-12 col-sm-6">
+			<img class="img-responsive" src={{url_for('static', filename='gifs/quiz.png')}}>
+		</div>
+	</div>
+	<div>
+		<img class="center canphone img-responsive" src={{url_for('static', filename='gifs/quiz-computer.png')}}>
+		<div><p>Page 2</p></div>
+	</div>
+</div>
+		
+		<a class="nextpage" href='/4'></a>
 		<div class="end"></div>
+
+<script>
+  $('.slick-stuff').slick({
+      });
+</script>
 	</div>
 </div>
 {% endblock %}
