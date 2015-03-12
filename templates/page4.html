@@ -5,7 +5,7 @@
 	<div class="main">
 	  <div class="headline">Traditional Advertising?</div>
 
-<div class="slick-stuff">
+<div class="slick-p4">
 	<div>
 		<img class="center canphone img-responsive" src={{url_for('static', filename='gifs/canphone1.png')}}>
 		<div><p>We can do better</p></div>
@@ -19,9 +19,12 @@
 		<div class="end"></div>
 
 <script>
-  $('.slick-stuff').slick({
+  $('.slick-p4').slick({
+      prevArrow: '<button type="button" class="slick-prev">&lt</button>',
+      nextArrow: '<button type="button" class="slick-prev">&gt</button>',
       });
 </script>
+
 	</div>
 </div>
 {% endblock %}
