@@ -1,18 +1,3 @@
-var waypoint = new Waypoint({
-    context: $("div.main"),
-    element: $('div.triggerP1'),
-    handler: function(direction) {
-     if (direction == 'down') {
-	$(".megaphone").removeClass("rotate").addClass("rotated")
-}
-    else {
-	    $(".megaphone").removeClass("rotated").addClass("rotate")
-    }
-},
-        offset: 'bottom-in-view',
-        enabled: true
-})
-
 var cbwaypoint = new Waypoint({
     context: $("div.main"),
     element: $("div.colourbar"),

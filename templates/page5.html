@@ -25,23 +25,6 @@
 <!-- waypoint trigger for adding/removing rotate classes -->
 
 <script src={{url_for('static', filename='waypoints.js')}}></script>
-<script>
-var waypoint = new Waypoint({
-    context: $("div.main"),
-    element: $('div.ww'),
-    handler: function(direction) {
-     if (direction == 'down') {
-	$(".megaphone").removeClass("fixed").addClass("free")
-}
-    else {
-	    $(".megaphone").removeClass("free").addClass("fixed")
-    }
-
-}, 
-        offset: 'bottom-in-view',
-        enabled: true
-})
-</script>
 	</div>
 </div>
 		
