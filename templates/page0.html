@@ -1,16 +1,23 @@
-
 {% extends "base.html" %}
 {% block content %}
-{{ super() }}
+<nav class="nav" style="z-index:-1">
+			<img class="logo" src={{url_for('static', filename='funnel-logo.svg')}}>
+
+		</nav>
 <div class="con">
-	<div class="main">
+		<div class="main">
+			<div class="page1">
+                          <div class="downarrow" style="height:200px"></div>
+			<img class="mainlogo" src={{url_for('static', filename='funnel-logo.svg')}}>
+		</div>
+<div class="colourbar">
+			</div>
 <div class="row">
 	<div class="col-xs-12">
 			<div class="center">
 				<div class="col-xs-12 col-sm-6 right-align" style="margin-top: 500px;">
 				 <h2>Traditional Advertising?</h2>
 				 <h3>We can do better!</h3>
-                          <div class="downarrow" style="height:200px"></div>
 				 </div>
 				 <div class="col-xs-12 col-sm-6 right-align" style="margin-top: 400px;">
 				 <img class="canphone img-responsive" src={{url_for('static', filename='gifs/funnelphone.png')}}>
@@ -22,10 +29,8 @@
 			<div class="end"></div>
 	
 </div>
+	</div>	
 </div>
-</div>
-
-
 {% endblock %}
 
 {% block scripts %}

@@ -2,11 +2,11 @@ from flask import Blueprint, render_template
 
 main = Blueprint('main', __name__, template_folder='templates')
 
-# @main.route('/')
-# def home():
-#     return render_template('page1.html')
-
 @main.route('/')
+def home():
+    return render_template('page1.html')
+
+@main.route('/2')
 def page2():
     return render_template('page2.html')
 
