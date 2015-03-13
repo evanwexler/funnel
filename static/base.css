@@ -291,6 +291,19 @@ div.businessman{
 	min-width: 1000px;
 	overflow: hidden;
 	}
+	
+	
+.slick-prev {
+	font-size: 2em;
+	background: #fff;
+	border: none;
+}
+
+.right-arrow {
+	float: right;
+	margin-top: -150px;
+}
+
 
 /* ----------- Adaptive Media Queries ----------- */
 
