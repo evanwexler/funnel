@@ -16,6 +16,8 @@
 			<div class="right-arrow"></div>
 	</div>
 	<div>
+
+			<div class="right-arrow"></div>
 		<img class="center canphone img-responsive" style="margin-top:0px" src={{url_for('static', filename='gifs/quiz-computer.png')}}>
 		<div class="right-arrow"></div>
 	</div>
@@ -26,7 +28,7 @@
 
 <script>
   $('.slick-p3').slick({
-      prevArrow: '',
+      prevArrow: '<button type="button" class="slick-prev">&lt</button>',
       nextArrow: '<button type="button" class="slick-prev">&gt</button>',
       appendArrows: $('.right-arrow')
       });
