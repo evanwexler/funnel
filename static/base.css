@@ -295,31 +295,46 @@ div.businessman{
 	
 .slick-prev {
 	font-size: 2em;
-        position: absolute;
-        top: 20px;
+    position: absolute;
+    top: 50%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 10%;
+    -moz-user-select: none;
+    -webkit-user-select: none;
 }
 
 
 .slick-next {
 	font-size: 2em;
-        position: absolute;
-        top: 20px;
-        right: 0px;
-}
-
-.right-arrow {
-	float: right;
-	margin-top: -200px;
-	margin-right: 10%;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    margin-right: 10%;
+    -moz-user-select: none;
+    -webkit-user-select: none;
 }
 
 img.downarrow {
-	margin: 0 auto;
 	margin-top: 200px;
 	font-size: 4em;
 	margin-left: 50%;
 	padding-bottom: 200px;
 	min-width: 40px;
+}
+
+
+.top50 
+{
+	margin-top: 50px;
+}
+
+
+.top200 
+{
+	margin-top: 200px;
 }
 
 
@@ -334,16 +349,47 @@ img.downarrow {
 	margin-top: 350px;
 }
 
+.top500 
+{
+	margin-top: 500px;
+}
+
+
+.neg300 {
+	padding-top: -300px;
+}
+
+h3.push {
+	padding-left: 300px;
+}
+
+h4.push {
+	padding-left: 400px;
+}
+
 /* ----------- Adaptive Media Queries ----------- */
 
 
-@media(max-width: 750px) { 
+@media(max-width: 750px) {
+	
+	nav.nav{
+		height: 50px;
+	}
 
-	h2, h3, h4 {
+	.logo{
+		height: 50px;
+	}
+
+		h2, h3, h4 {
 	text-align: center;
 	margin: 0 auto;
+	font-size: 1.5em;
+	line-height: 1.5em;
 	}
 	
+	h3{
+		padding-left: 0px;
+	}
 	
 	.top300{
 		margin-top: 50px;
@@ -351,12 +397,26 @@ img.downarrow {
 	
 	
 	.top350{
-		margin-top: 200px;
+		margin-top: 30px;
 	}
 	
 	
+	img.downarrow {
+		margin-top:50px;
+		margin-bottom:100px;
+		margin-left: 45%;
+	}
 	
 	
+	img.canphone {
+		margin: 0 auto;
+	}
+	
+	h3.push, h4.push {
+		padding: 0px;
+		font-size: .9em;
+		
+	}
 	
 	
 }
