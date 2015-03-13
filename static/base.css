@@ -379,6 +379,9 @@ div.slideimage{
 		margin-top:250px;	
 	}
 
+video {
+	margin-left: 30%;
+}
 
 /* ----------- Adaptive Media Queries ----------- */
 
