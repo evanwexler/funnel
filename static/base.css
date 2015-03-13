@@ -295,8 +295,16 @@ div.businessman{
 	
 .slick-prev {
 	font-size: 2em;
-	background: #fff;
-	border: none;
+        position: absolute;
+        top: 20px;
+}
+
+
+.slick-next {
+	font-size: 2em;
+        position: absolute;
+        top: 20px;
+        right: 0px;
 }
 
 .right-arrow {
