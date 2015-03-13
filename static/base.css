@@ -313,12 +313,42 @@ img.downarrow {
 	padding-bottom: 200px;
 	min-width: 40px;
 }
+
+
+.top300 
+{
+	margin-top: 300px;
+}
+
+
+.top350 
+{
+	margin-top: 350px;
+}
+
 /* ----------- Adaptive Media Queries ----------- */
 
 
-@media(max-width: 800px) { 
+@media(max-width: 750px) { 
+
+	h2, h3, h4 {
+	text-align: center;
+	margin: 0 auto;
+	}
 	
-		
+	
+	.top300{
+		margin-top: 50px;
+	}
+	
+	
+	.top350{
+		margin-top: 200px;
+	}
+	
+	
+	
+	
 	
 	
 }
