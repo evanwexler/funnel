@@ -18,7 +18,7 @@
 //     offset: '100px',
 //     })
 
-var page1height = $("div.page1").innerHeight();
+// var page1height = $("div.page1").innerHeight();
 
 var pagesLoaded = []
 
