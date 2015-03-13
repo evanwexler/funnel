@@ -22,6 +22,12 @@ h3 {
 	font-style: italic;
 }
 
+h4 {
+	font-family: sans-serif;
+	font-weight: 100;
+	line-height: 1.5em;
+}
+
 div.page1 {
 	background-color: #231F20;
     height: 100%;
@@ -359,6 +365,8 @@ img.downarrow {
 	padding-top: -300px;
 }
 
+
+
 h3.push {
 	padding-left: 300px;
 }
@@ -367,7 +375,21 @@ h4.push {
 	padding-left: 400px;
 }
 
+div.slideimage{
+		margin-top:250px;	
+	}
+
+
 /* ----------- Adaptive Media Queries ----------- */
+
+
+
+@media(max-width: 750px) {
+
+
+
+}
+
 
 
 @media(max-width: 750px) {
@@ -412,11 +434,24 @@ h4.push {
 		margin: 0 auto;
 	}
 	
-	h3.push, h4.push {
+	h2.push, h3.push, h4.push {
 		padding: 0px;
-		font-size: .9em;
+		font-size: 1.4em;
+		text-align: left;
+		max-width: 60%;
 		
 	}
 	
+	img.quizmage {
+		position: absolute;
+		width: 150px;
+		margin: 0 auto;
+		left: 130px;
+		top: -80px;
+	}
+	
+	div.slideimage{
+		margin-top:200px;	
+	}
 	
 }
