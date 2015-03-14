@@ -3,46 +3,56 @@
 {{ super() }}
 <div class="con">
 	<div class="main">
-		<div class="slick-p3">
-	<div>
-		<div class=" visible-xs-* hidden-sm hidden-md hidden-lg col-sm-6 top200">
-			<img class="img-responsive quizmage" src={{url_for('static', filename='gifs/quiz.png')}}>
-		</div>
 		
-		<div class="col-xs-12 col-sm-6 right-align top300">
-			<h2 class="push">engage ads</h2>
-			<h3 class="push">Stunning interactive display ads fully optimized for all devices</h3>
-			<h4 class="push">These interactives can be positioned as full-width ads between articles or as inline units within a story</h4>
+		<div class="slick-p3">
+			
+		<div class="engagewrap">	
+			
+			<div class="col-xs-12 col-sm-6 right-align top300">
+				<h2 class="push">engage ads</h2>
+				<h3 class="push">Stunning interactive display ads fully optimized for all devices</h3>
+				<h4 class="push">These interactives can be positioned as full-width ads between articles or as inline units within a story</h4>
+			</div>
+			<div class="col-xs-12 col-sm-6 top300">
+				<img class="img-responsive" src={{url_for('static', filename='gifs/quiz.png')}}>
+			</div>
 		</div>
-		<div class=" hidden-xs col-xs-12 col-sm-6 top300">
-			<img class="img-responsive" src={{url_for('static', filename='gifs/quiz.png')}}>
-		</div>
-	</div>
 	
 <!-- 	slide 2 -->
-	<div class="slideimage img-responsive center">
-		<video width="768 " height="576" loop autoplay>
+	<div class="slideimage">
+		<p class="center fix768"> 
+		<video id="vid1" width="768 " height="576" loop autoplay>
   <source src={{url_for('static', filename='gifs/AD1_DESKTOP.mp4')}} type="video/mp4"></video>
+		</p>
 	</div>
+	
 	
 <!-- 	slide 3 -->
 	<div class="slideimage">
-		<img class="img-responsive center" src={{url_for('static', filename='gifs/interactive-slide-2a.png')}}>
+		<p class="center fix768"> 
+		<video id="vid2" width="768 " height="576" loop autoplay>
+  <source src={{url_for('static', filename='gifs/AD2_DESKTOP.mp4')}} type="video/mp4"></video>
+		</p>
 	</div>
 	
 <!-- 	slide 4 -->
-	<div class="slideimage">
-		<img class="img-responsive center" src={{url_for('static', filename='gifs/interactive-slide-3a.png')}}>
-	</div>
-	
+<div class="slideimage">
+		<p class="center fix768"> 
+		<video id="vid3" width="768 " height="576" loop autoplay>
+  <source src={{url_for('static', filename='gifs/AD3_DESKTOP.mp4')}} type="video/mp4"></video>
+		</p>
 </div>
-		<a class="nextpage" href='/4'></a>
+	
 <script>
   $('.slick-p3').slick({
   prevArrow: '<button type="button" class="slick-prev">&lt</button>',
   nextArrow: '<button type="button" class="slick-next">&gt</button>'
       });
+  document.getElementById('vid1').play();
+  document.getElementById('vid2').play();
+  document.getElementById('vid3').play();
 </script>
 	</div>
+	<a class="nextpage" href='/4'></a>
 </div>
 {% endblock %}
