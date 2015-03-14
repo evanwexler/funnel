@@ -344,7 +344,7 @@ img.downarrow {
 }
 
 
-.top300 
+.top300 , .engagewrap
 {
 	margin-top: 300px;
 }
@@ -445,7 +445,7 @@ div.slideimage{
 		
 	}
 	
-	img.quizmage {
+	.quizmage {
 		position: absolute;
 		width: 150px;
 		margin: 0 auto;
@@ -453,8 +453,9 @@ div.slideimage{
 		top: -80px;
 	}
 	
-	div.slideimage{
+	.slideimage, video{
 		margin-top:200px;	
+		width:350px;
+		margin: 0 auto;
 	}
 	
-}
