@@ -3,19 +3,44 @@
 {{ super() }}
 <div class="con">
 	<div class="main">
-	 
-	 <h1> Page 4 </h1>
+		
+<div class="slick-p4">			
+		<div class="engagewrap">	
+			<div class=" hidden-xs col-xs-12 col-sm-6">
+				<img class="canphone img-responsive right-align" src={{url_for('static', filename='gifs/chart.png')}}>
+			</div>
+			<div class="col-xs-12 col-sm-6 right-align">
+				<h2 class="push-left">bulletin</h2>
+				<h3 class="push-left">Compelling sponsored content written by our ad team with expertise in creating shareable stories</h3>
+				<h4 class="push-left">These pieces bear clear branding and are elegantly positioned within site content.</h4>
+			</div>
+			
+		</div>
 	
-		<a class="nextpage" href='/5'></a>
-		<div class="end"></div>
+<!-- 	slide 2 -->
+	<div class="slideimage">
+		<p class="center fix768"> 
+		<img class="canphone img-responsive" src={{url_for('static', filename='gifs/bulletin-slide-1a.png')}}>
+		</p>
+	</div>
+	
+<!-- 	slide 3 -->
+<div class="slideimage">
+		<p class="center fix768"> 
+		<img class="canphone img-responsive" src={{url_for('static', filename='gifs/bulletin-slide-2.png')}}>
+		</p>
+</div>
+</div>
 
+<a class="nextpage" href='/5'></a>
+	
 <script>
   $('.slick-p4').slick({
-      prevArrow: '<button type="button" class="slick-prev arrow-right">&lt</button>',
-      nextArrow: '<button type="button" class="slick-prev">&gt</button>',
+  prevArrow: '<button type="button" class="slick-prev">&lt</button>',
+  nextArrow: '<button type="button" class="slick-next">&gt</button>'
       });
 </script>
-
 	</div>
+	
 </div>
 {% endblock %}

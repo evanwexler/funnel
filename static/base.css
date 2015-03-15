@@ -94,6 +94,8 @@ div.colourbar li {
 div.right-align  {
 	text-align: right;
 }
+
+
 img.right-align  {
 	float: right;
 }
@@ -376,12 +378,25 @@ h4.push {
 }
 
 div.slideimage{
-		margin-top:250px;
+		margin-top:85px;
 	}
 
 .fix768 {
 	max-width: 768px;
 }
+
+
+h3.push-left, h2.push-left {
+	padding-right: 300px;
+	text-align: left;
+}
+
+h4.push-left {
+	padding-right: 400px;
+	text-align: left;
+}
+
+
 
 /* ----------- Adaptive Media Queries ----------- */
 
@@ -437,12 +452,11 @@ div.slideimage{
 		margin: 0 auto;
 	}
 	
-	h2.push, h3.push, h4.push {
+	h2.push, h3.push, h4.push, h2.push-left, h3.push-left, h4.push-left {
 		padding: 0px;
 		font-size: 1.4em;
 		text-align: left;
 		max-width: 60%;
-		
 	}
 	
 	.quizmage {
