@@ -1,15 +1,46 @@
 {% extends "base.html" %}
 {% block content %}
 {{ super() }}
-<div class="container">
+<div class="con">
 	<div class="main">
-		<div class="col-xs-12">
-			<div class="gray-headline">Interactive Features</div>
-			<iframe class="col-xs-12 iframeplace housingplace" src="http://178.62.36.152:8000/"></iframe>
-			<iframe class="col-xs-12 iframeplace quizplace" src="/quiz"></iframe>
-		</div>
-		<a class="nextpage" href='/8'></a>
-		<div class="end "></div>
-	</div>
+<div class="row">
+	<div class="col-xs-12">
+			<div class="center">
+				
+<!--
+				<div class="visible-xs-* hidden-sm hidden-md hidden-lg top200">
+				 	<img class="canphone img-responsive" src={{url_for('static', filename='gifs/funnelphone.png')}}>
+				 </div>
+-->
+				
+				<div class="col-xs-12 col-sm-6 right-align top350">
+				 <h2>CONTACT US</h2>
+				 <h3 style="font-weight: 800;">at advertising@scroll.in</h3>
+				 <h3 style="font-style: italic;">Subscribe to our weekly memo on digital media</h3>
+				 <div class="end-space"> </div>
+				 </div>
+				 
+				 
+<!--
+				 <div class="hidden-xs col-sm-6 right-align top300">
+				 	<img class="canphone img-responsive" src={{url_for('static', filename='gifs/funnelphone.png')}}>
+				 </div>
+-->
+<div class="row">
+	
+	</div> 
 </div>
+			</div>
+	</div>
+	
+</div>
+</div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+<script src={{url_for('static', filename='p1.js')}}></script>
 {% endblock %}

@@ -1,51 +1,56 @@
 {% extends "base.html" %}
 {% block content %}
 {{ super() }}
-<div class="container">
+<div class="con">
 	<div class="main">
-		<div class="gray-headline ">Native advertising</div>
-		<div class="ww trigger">trigger to affix text</div>
-			<div class="row">
-				<span class="col-sm-12 col-md-6">
-					<img class="right img-responsive" src={{url_for('static', filename='gifs/phone-1.png')}}>
-					<img class="align-bottom doughnut" style="height: 140px; margin-top: 430px; float:right;" src={{url_for('static', filename='gifs/doughnut1.gif')}}>
-				</span>
-				
-				<span class="col-sm-12 col-md-6">
-					<img class="left img-responsive" style="vertical-align: top;" src={{url_for('static', filename='gifs/phone-2.png')}}>
-					<img class="align-bottom owl" style="height: 140px; margin-top: 430px;" src={{url_for('static', filename='gifs/owl1.gif')}}>
-				</span>
-			</div>
-		<a class="nextpage" href='/6'></a>
-		<div class="end"></div>
-	</div>
-</div>
-
-
-<!-- waypoint trigger for adding/removing rotate classes -->
-
-<script src={{url_for('static', filename='waypoints.js')}}></script>
-	</div>
-</div>
 		
-{% endblock %}
+<div class="slick-p5">			
+		<div class="engagewrap">	
+			<div class="col-xs-12 col-sm-6 right-align">
+				<h2 class="push">MEMO</h2>
+				<h3 class="push">Innovative newsletters fueled by our patent-pending technologies that curate stories most-shared by influencers</h3>
+				<h4 class="push">These custom-content mailers present unique opportunities for audience growth and engagement</h4>
+			</div>
+			<div class=" hidden-xs col-xs-12 col-sm-6">
+				<img class="img-responsive" src={{url_for('static', filename='gifs/mess.png')}}>
+			</div>
+		</div>
+	
+<!-- 	slide 2 -->
+	<div class="slideimage">
+		<p class="center fix768"> 
+		<img class="canphone img-responsive" src={{url_for('static', filename='gifs/memo-slide-1.png')}}>
+		</p>
+	</div>
+	
 
-{% block scripts %}
-{{ super() }}
-<script src={{url_for('static', filename='waypoints.js')}}></script>
+	
+<!-- 	slide 4 -->
+<div class="slideimage">
+		<p class="center fix768"> 
+		<img class="canphone img-responsive" src={{url_for('static', filename='gifs/memo-slide-2.png')}}>
+		</p>
+</div>
+</div>
+
+
+<div class="row">
+	<div class="col-sm-12">
+		<img class="downarrow" src={{url_for('static', filename='gifs/down-arrow.png')}}> 
+	</div> 
+</div>
+<a class="nextpage" href='/6'></a>
+	
 <script>
-  create_waypoints = function() {
-var waypoint = new Waypoint({
-    context: $("div.main"),
-    element: $('div.ww'),
-    handler: function(direction) {
-     if (direction == 'down') {
-	console.log('1')
-}}, 
-        offset: 'bottom-in-view',
-        enabled: true
-})
-
-  }
+  $('.slick-p5').slick({
+  prevArrow: '<button type="button" class="slick-prev">&lt</button>',
+  nextArrow: '<button type="button" class="slick-next">&gt</button>'
+      });
+  document.getElementById('vid1').play();
+  document.getElementById('vid2').play();
+  document.getElementById('vid3').play();
 </script>
+	</div>
+	
+</div>
 {% endblock %}

@@ -1,16 +1,31 @@
 {% extends "base.html" %}
 {% block content %}
 {{ super() }}
-<div class="container">
-	<div class="main">
-		<span class="col-xs-12">
-			<div class="laptopcon"> 
-			<img class="align-bottom suspenders" src={{url_for('static', filename='gifs/suspenders.gif')}}>
-			<img class="cntr img-responsive" src={{url_for('static', filename='gifs/laptop.png')}}>
+<div class="con">
+		<div class="main">
+			<div class="row">
+		<div class="col-xs-12">
+			<div class="center">
+				<div class="col-xs-12 col-sm-6">
+				<img class="canphone img-responsive right-align" src={{url_for('static', filename='gifs/charsa.png')}}>
 			</div>
-		</span>
-		<a class="nextpage" href='/7'></a>
-		<div class="end "></div>
-	</div>
+			
+			<div class="col-xs-12 col-sm-6 top50">
+				<h2 class="push-left">Reach</h2>
+				<h3 class="push-left">Funnel can help your brand reach the audiences that matter using the same proprietary systems that have made Scroll one of the fastest growing social media content companies.</h3>
+				<h4 class="push-left">We offer scale and placement on Scroll.in, Quartz India, social media and other partners.</h4>
+			</div>				 
+<div class="row">
+	<div class="col-sm-12">
+		<img class="downarrow" src={{url_for('static', filename='gifs/down-arrow.png')}}>
+          </div> </div>
+		</div>
+		
+</div>
+
+	<a class="nextpage" href='/7'></a>
+</div>
+</div>
 </div>
 {% endblock %}
+
