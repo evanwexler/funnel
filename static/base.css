@@ -353,7 +353,10 @@ img.downarrow {
 
 
 .bulletinwrap {
-	
+	margin-top: 150px;
+}
+
+.memowrap {
 	margin-top: 150px;
 }
 
@@ -383,11 +386,11 @@ img.downarrow {
 
 
 h3.push {
-	padding-left: 300px;
+	padding-left: 45%;
 }
 
 h4.push {
-	padding-left: 400px;
+	padding-left: 45%;
 }
 
 div.slideimage{
@@ -404,12 +407,12 @@ div.slideimage video{
 
 
 h3.push-left, h2.push-left {
-	padding-right: 300px;
+	padding-right:  40%;
 	text-align: left;
 }
 
 h4.push-left {
-	padding-right: 400px;
+	padding-right: 45%;
 	text-align: left;
 }
 
@@ -462,7 +465,7 @@ h4.push-left {
 	}
 	
 	
-	.top350{
+	.top350, .top375{
 		margin-top: 30px;
 	}
 	
@@ -504,6 +507,16 @@ h4.push-left {
 		float: none;
 	}
 	
+	
+	.form-group {
+	  margin: 0 auto;
+}
+
+.btn-default, .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default {
+	margin: 0 auto;
+} 
+
+}
 	
 @media(max-width: 550px) {
 
