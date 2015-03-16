@@ -514,11 +514,10 @@ h4.push-left {
 	  
 	.shrinker{
 		  margin: 0 auto;
-		  height: 50%;
-		  width: 50%;
+		  height: 30%;
+		  width: 30%;
 	  }
-	  
-	  
+	 
 	 div.memowrap, div.engagewrap, div.bulletinwrap{
 		 margin-top: none;
 	 }
@@ -538,6 +537,8 @@ h4.push-left {
 		width:350px;
 		margin: 0 auto;
 	}
+	
+	
 	
 
 }
