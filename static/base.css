@@ -484,8 +484,9 @@ h4.push-left {
 	h2.push, h3.push, h4.push, h2.push-left, h3.push-left, h4.push-left {
 		padding: 0px;
 		font-size: 1.4em;
-		text-align: left;
+		text-align: center;
 		max-width: 60%;
+		hyphens: none;
 	}
 	
 	.quizmage {
@@ -507,13 +508,25 @@ h4.push-left {
 		float: none;
 	}
 	
-	
 	.form-group {
 	  margin: 0 auto;
+	  }
+	  
+	.shrinker{
+		  margin: 0 auto;
+		  height: 50%;
+		  width: 50%;
+	  }
+	  
+	  
+	 div.memowrap, div.engagewrap, div.bulletinwrap{
+		 margin-top: none;
+	 }
 }
 
 .btn-default, .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default {
-	margin: 0 auto;
+	margin-left: 40%;
+	margin-top: 30px;
 } 
 
 }
@@ -525,6 +538,7 @@ h4.push-left {
 		width:350px;
 		margin: 0 auto;
 	}
+	
 
 }
 
