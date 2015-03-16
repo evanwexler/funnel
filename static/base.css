@@ -363,6 +363,13 @@ img.downarrow {
 	margin-top: 350px;
 }
 
+
+.top375 
+{
+	margin-top: 375px;
+}
+
+
 .top500 
 {
 	margin-top: 500px;
@@ -411,6 +418,20 @@ h4.push-left {
 	padding-bottom: 300px;
 }
 
+.form-group {
+	  max-width: 350px;
+}
+
+.btn-default, .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default 
+{
+	font-family: 'Droid Serif', serif;	
+	font-style: italic;
+	font-weight: 800;
+	font-size: 2em;
+	text-align: center;
+	color: #4c4c4c;
+	text-transform: uppercase;
+}
 
 /* ----------- Adaptive Media Queries ----------- */
 
